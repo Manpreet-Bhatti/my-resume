@@ -21,6 +21,7 @@
     },
     "devDependencies": {
         "gatsby-plugin-sass": "^2.3.10",
+        "gatsby-source-contentful": "^2.3.24",
         "prettier": "^2.0.5",
         "pretty-quick": "^2.0.1",
         "sass": "^1.26.10"
