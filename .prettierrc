@@ -1,0 +1,7 @@
+{
+    "arrowParens": "always",
+    "jsxSingleQuote": false,
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "singleQuote": false
+}
