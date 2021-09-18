@@ -14,7 +14,8 @@ export default function Header() {
         <p className={styles.blurb}>{site.siteMetadata.blurb}</p>
       </div>
       <ul className={styles.items}>
-        {HeaderData.map(({ content, key }) => {
+        {HeaderData.map((content, key) => {
+          // console.log(iconMap[content.id]);
           const Icon = iconMap[content.id];
           return (
             <li className={styles.item} key={key}>

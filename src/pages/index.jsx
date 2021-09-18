@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Helmet from "react-helmet";
 import { graphql, useStaticQuery } from "gatsby";
+import Layout from "../components/Layout";
+import Header from "../sections/Header";
+import Menu from "../components/Menu";
+import Seo from "../components/Seo";
 
 export const modeContext = React.createContext({ get: false, set() {} });
-
 export default function IndexPage() {
   const [mode, setMode] = useState();
   useEffect(() => setMode(localStorage.getItem("dark_mode") === "true"), []);
@@ -16,7 +19,9 @@ export default function IndexPage() {
       localStorage.setItem("dark_mode", false);
     }
   }, [mode]);
-  const { resume } = useStaticQuery(query);
+  const { site } = useStaticQuery(query);
+
+  console.log(Header);
 
   return (
     <modeContext.Provider value={{ get: mode, set: setMode }}>
@@ -37,6 +42,13 @@ export default function IndexPage() {
           crossorigin="anonymous"
         />
       </Helmet>
+      <Layout
+        seo={{
+          title: site.siteMetadata.author,
+        }}
+        header={<Header />}
+      />
+      <Menu />
     </modeContext.Provider>
   );
 }

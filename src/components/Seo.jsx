@@ -8,14 +8,14 @@ export default function Seo({
   meta = [],
   title,
 }) {
-  const { resume } = useStaticQuery(query);
-  const metaDesc = description || resume.siteMetadata.description;
+  const { site } = useStaticQuery(query);
+  const metaDesc = description || site.siteMetadata.description;
 
   return (
     <Helmet
       htmlAttributes={{ lang }}
       title={title}
-      titleTemplate={`%s | ${resume.siteMetadata.title}`}
+      titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: "description",
