@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import { graphql, useStaticQuery } from "gatsby";
 import Layout from "../components/Layout";
 import Header from "../sections/Header";
+import Skills from "../sections/Skills";
 import Menu from "../components/Menu";
 import Seo from "../components/Seo";
 
@@ -20,8 +21,6 @@ export default function IndexPage() {
     }
   }, [mode]);
   const { site } = useStaticQuery(query);
-
-  console.log(Header);
 
   return (
     <modeContext.Provider value={{ get: mode, set: setMode }}>
@@ -47,6 +46,7 @@ export default function IndexPage() {
           title: site.siteMetadata.author,
         }}
         header={<Header />}
+        skills={<Skills />}
       />
       <Menu />
     </modeContext.Provider>
