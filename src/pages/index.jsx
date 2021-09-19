@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import Layout from "../components/Layout";
 import Header from "../sections/Header";
 import Skills from "../sections/Skills";
+import Education from "../sections/Education";
 import Menu from "../components/Menu";
 import Seo from "../components/Seo";
 
@@ -47,6 +48,7 @@ export default function IndexPage() {
         }}
         header={<Header />}
         skills={<Skills />}
+        education={<Education />}
       />
       <Menu />
     </modeContext.Provider>
