@@ -1,0 +1,50 @@
+@use "../../styles/variables";
+@use "sass:math";
+
+.header {
+  display: flex;
+}
+
+.dates,
+.title,
+.subtitle {
+  margin: 0;
+}
+
+.title {
+  font-size: map-get(variables.$text, normal) !important;
+  padding-right: map-get(variables.$unit, container);
+  margin-right: auto;
+}
+
+.dates {
+  margin: math.div(map-get(variables.$unit, tad), 2) 0
+    map-get(variables.$unit, tad);
+  font-size: map-get(variables.$text, small);
+  font-weight: bold;
+  text-align: end;
+  flex-shrink: 0;
+}
+
+.subtitle {
+  margin-top: map-get(variables.$unit, tad) * -1;
+  margin-bottom: map-get(variables.$unit, tad);
+  font-size: map-get(variables.$text, smaller);
+  color: var(--color--heading);
+  font-weight: bold;
+}
+
+.content {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: map-get(variables.$unit, element);
+    font-size: map-get(variables.$text, smaller);
+  }
+
+  p {
+    margin-bottom: map-get(variables.$unit, break);
+    margin-top: 0;
+  }
+}
