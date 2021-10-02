@@ -10,8 +10,8 @@ export const WorkData = {
       description: [
         <p>
           Working on developing and implementing a Natural Language Processing
-          search engine for looking up support tickets based off Global Vectors
-          for Word Representation.
+          search engine for looking up relevant support tickets based off Global
+          Vectors for Word Representation.
         </p>,
         <p>
           Building upon SwaggerHub, a custom API-documentation space was created
