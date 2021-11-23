@@ -3,7 +3,7 @@ export const SkillsData = [
     title: "Web/Frameworks",
     content: [
       "React",
-      "Ionic",
+      "Redux",
       "JavaScript",
       "TypeScript",
       "SCSS",
