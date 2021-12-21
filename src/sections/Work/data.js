@@ -6,7 +6,7 @@ export const WorkData = {
       company: "iVedha",
       position: "Junior Developer",
       start: "May 2021",
-      end: "Current",
+      end: "Oct 2021",
       description: [
         <p>
           Working on developing and implementing a Natural Language Processing
