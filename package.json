@@ -1,7 +1,7 @@
 {
     "name": "my-resume",
     "private": true,
-    "description": "An HTML resume made with React and Gatsby just because I can... Learn more about this and things I make at https://github.com/fpunny",
+    "description": "An HTML resume made with React and Gatsby just because I can... Learn more about this and things I make at https://github.com/Manpreet-Bhatti",
     "version": "1.0.0",
     "author": "Manpreet Bhatti",
     "dependencies": {
