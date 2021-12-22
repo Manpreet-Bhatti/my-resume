@@ -50,6 +50,7 @@ span {
 
   .title {
     margin-bottom: map-get(variables.$unit, tad);
-    font-size: map-get(variables.$text, large);
+    font-size: map-get(variables.$text, larger);
+    color: var(--color--heading);
   }
 }

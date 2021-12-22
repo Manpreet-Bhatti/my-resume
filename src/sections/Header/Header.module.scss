@@ -2,7 +2,7 @@
 @use "../../styles/mixins";
 
 .title {
-  font-size: map-get(variables.$text, heading);
+  font-size: map-get(variables.$text, larger);
 }
 
 .blurb,
@@ -11,24 +11,29 @@
   margin: 0;
 }
 
+.blurb {
+  color: var(--color--heading);
+  font-size: map-get(variables.$text, smaller);
+}
+
 .items {
-  margin-right: -1 * map-get(variables.$unit, component);
-  font-size: map-get(variables.$text, small);
-  margin-top: map-get(variables.$unit, tad);
+  margin-bottom: auto;
+  grid-gap: 0.025in;
+  display: grid;
   list-style-type: none;
+  display: flex;
   padding: 0;
+  font-size: map-get(variables.$text, small);
 }
 
 .item {
-  padding-right: map-get(variables.$unit, component);
-  color: var(--color--text);
-  box-sizing: border-box;
+  margin-right: 0.25in;
 }
 
 .link {
   @include mixins.transition(background-color);
   border-radius: map-get(variables.$unit, tad);
-  padding: map-get(variables.$unit, tad) map-get(variables.$unit, break);
+  padding: map-get(variables.$unit, tad) map-get(variables.$unit, tad);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -46,8 +51,8 @@
 }
 
 .icon {
-  margin-right: map-get(variables.$unit, element);
-  width: map-get(variables.$text, normal);
+  margin-right: 0.05in;
+  width: map-get(variables.$text, small);
   color: var(--color--primary);
   flex-shrink: 0;
   height: auto;

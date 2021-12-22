@@ -12,9 +12,10 @@
 }
 
 .title {
-  font-size: map-get(variables.$text, normal) !important;
+  font-size: map-get(variables.$text, smaller) !important;
   padding-right: map-get(variables.$unit, container);
   margin-right: auto;
+  color: var(--color--primary);
 }
 
 .dates {
@@ -35,20 +36,27 @@
 }
 
 .content {
+  grid-template-columns: min-content auto;
+  grid-gap: 0.1in 0.15in;
+  display: grid;
+
   ul {
     list-style-type: none;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 0.1in;
     padding: 0;
     margin: 0;
-    margin-bottom: map-get(variables.$unit, element);
-    font-size: map-get(variables.$text, smaller);
+    font-size: map-get(variables.$text, small);
   }
+}
 
-  p {
-    margin-bottom: map-get(variables.$unit, break);
-    margin-top: 0;
-  }
+.label {
+  font-size: map-get(variables.$text, small);
+  color: var(--color--text);
+  margin: 0;
+}
 
-  b {
-    color: var(--color--heading);
-  }
+.item {
+  font-size: map-get(variables.$text, small);
 }

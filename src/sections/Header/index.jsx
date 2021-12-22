@@ -11,11 +11,10 @@ export default function Header() {
     <header className={classnames(styles.container, "container")}>
       <div className={styles.head}>
         <h1 className={styles.title}>{site.siteMetadata.author}</h1>
-        <p className={styles.blurb}>{site.siteMetadata.blurb}</p>
+        <strong className={styles.blurb}>{site.siteMetadata.blurb}</strong>
       </div>
       <ul className={styles.items}>
         {HeaderData.map((content, key) => {
-          // console.log(iconMap[content.id]);
           const Icon = iconMap[content.id];
           return (
             <li className={styles.item} key={key}>

@@ -25,22 +25,6 @@
   display: flex;
 }
 
-.brochure {
-  display: inline-block;
-  width: 40%;
-  b {
-    display: block;
-  }
-}
-
 .item {
   padding-bottom: map-get(variables.$unit, component);
-}
-
-.content {
-  padding-left: map-get(variables.$unit, container);
-  padding-top: map-get(variables.$unit, break);
-  box-sizing: border-box;
-  display: inline-block;
-  width: 60%;
 }

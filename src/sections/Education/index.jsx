@@ -17,9 +17,14 @@ export default function Education() {
       </div>
       <p className={styles.subtitle}>{EduData["degree"]}</p>
       <div className={styles.content}>
+        <h3 className={styles.label}>Volunteer</h3>
         <ul>
           {EduData["content"].map((para, key) => {
-            return <li key={key}>{para}</li>;
+            return (
+              <li className={styles.item} key={key}>
+                {para}
+              </li>
+            );
           })}
         </ul>
       </div>

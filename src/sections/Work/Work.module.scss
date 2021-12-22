@@ -12,7 +12,7 @@
 }
 
 .title {
-  font-size: map-get(variables.$text, normal) !important;
+  font-size: map-get(variables.$text, smaller) !important;
   padding-right: map-get(variables.$unit, container);
   margin-right: auto;
 }
@@ -29,7 +29,7 @@
 .subtitle {
   margin-top: map-get(variables.$unit, tad) * -1;
   margin-bottom: map-get(variables.$unit, tad);
-  font-size: map-get(variables.$text, smaller);
+  font-size: map-get(variables.$text, small);
   color: var(--color--heading);
   font-weight: bold;
 }
@@ -40,7 +40,7 @@
     padding: 0;
     margin: 0;
     margin-bottom: map-get(variables.$unit, element);
-    font-size: map-get(variables.$text, smaller);
+    font-size: map-get(variables.$text, small);
   }
 
   p {
