@@ -6,7 +6,7 @@ export default function GitHub() {
   return (
     <a
       href="https://github.com/Manpreet-Bhatti/my-resume"
-      aria-label="Toggle dark mode"
+      aria-label="Resume GitHub repo"
       className={styles.button}
       rel="noreferrer noopener"
       target="_blank"

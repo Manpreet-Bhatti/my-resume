@@ -6,7 +6,8 @@ export default function PrintScreen() {
   return (
     <button
       onClick={() => window?.print()}
-      aria-label="Toggle dark mode"
+      title="Print/download resume"
+      aria-label="Print page"
       className={styles.button}
     >
       <FiPrinter className={styles.icon} />

@@ -9,6 +9,7 @@ export default function ToggleMode() {
   return (
     <button
       onClick={() => context.set(!context.get)}
+      title="Change theme"
       aria-label="Toggle dark mode"
       className={styles.button}
     >

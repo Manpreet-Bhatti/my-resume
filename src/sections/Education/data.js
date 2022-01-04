@@ -1,5 +1,3 @@
-import React from "react";
-
 export const EduData = {
   title: "University of Toronto",
   start: 2018,
