@@ -1,4 +1,6 @@
 import React from "react";
+import { FiGithub } from "react-icons/fi";
+import styles from "./Work.module.scss";
 
 export const WorkData = {
   experience: [
@@ -30,7 +32,16 @@ export const WorkData = {
           Worked with team members to create an auto-README documenter via
           TypeScript and GitHub APIs, granting developers the power to visualize
           their repository's file system for training, onboarding, and/or
-          showcase purposes.
+          showcase purposes.&emsp;
+          <a
+            aria-label="GitHub repo for the auto-README documenter"
+            rel="noreferrer noopenner"
+            className={styles.link}
+            target="_blank"
+            href="https://github.com/cheapreats/auto-readme-docs"
+          >
+            <FiGithub className={styles.icon} />
+          </a>
         </p>,
         <p>
           Collaborated with designers to implement a TypeScript location-based
