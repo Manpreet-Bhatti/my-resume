@@ -32,7 +32,7 @@ export const WorkData = {
           Worked with team members to create an auto-README documenter via
           TypeScript and GitHub APIs, granting developers the power to visualize
           their repository's file system for training, onboarding, and/or
-          showcase purposes.&emsp;
+          showcase purposes.
           <a
             aria-label="GitHub repo for the auto-README documenter"
             rel="noreferrer noopenner"

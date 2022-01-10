@@ -47,11 +47,11 @@
   p {
     margin-bottom: map-get(variables.$unit, break);
     margin-top: 0;
+    display: inline-flex;
   }
 }
 
 .icon {
-  margin-right: 0.05in;
   width: map-get(variables.$text, small);
   color: var(--color--primary);
   flex-shrink: 0;
