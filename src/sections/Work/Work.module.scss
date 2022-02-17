@@ -45,7 +45,7 @@
   }
 
   p {
-    margin-bottom: map-get(variables.$unit, break);
+    margin-bottom: map-get(variables.$unit, tad);
     margin-top: 0;
     display: inline-flex;
   }
