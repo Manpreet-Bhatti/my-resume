@@ -33,14 +33,14 @@ export default function IndexPage() {
           as="font"
           type="font/woff2"
           href="/fonts/Avenir-Medium.woff2"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
         <link
           rel="preload"
           as="font"
           type="font/woff2"
           href="/fonts/Avenir-Light.woff2"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
       </Helmet>
       <Layout
