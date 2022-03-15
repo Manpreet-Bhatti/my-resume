@@ -1,4 +1,5 @@
 const { description } = require("./package.json");
+require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
@@ -30,6 +31,13 @@ module.exports = {
         cssLoaderOptions: Object.assign({
           camelCase: false,
         }),
+      },
+    },
+    {
+      resolve: "gatsby-source-contentful",
+      options: {
+        accessToken: process.env.C_ACCESS_ID,
+        spaceId: "n48ldden1p9e",
       },
     },
   ],
