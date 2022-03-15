@@ -7,7 +7,7 @@ export default function Skills() {
   return (
     <StaticQuery
       query={graphql`
-        query MyQuery {
+        query SkillsQuery {
           allContentfulSkills {
             edges {
               node {
