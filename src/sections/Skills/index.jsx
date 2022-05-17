@@ -22,21 +22,18 @@ export default function Skills() {
         <Fragment>
           <h2 className={classnames(styles.title, "title")}>Skills</h2>
           <section className={styles.container}>
-            {data.allContentfulSkills.edges
-              .slice(0)
-              .reverse()
-              .map((skills, key) => (
-                <Fragment key={key}>
-                  <h3 className={styles.label}>{skills.node.title}</h3>
-                  <ul className={styles.items}>
-                    {skills.node.list.map((item) => (
-                      <li className={styles.item} key={item}>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </Fragment>
-              ))}
+            {data.allContentfulSkills.edges.map((skills, key) => (
+              <Fragment key={key}>
+                <h3 className={styles.label}>{skills.node.title}</h3>
+                <ul className={styles.items}>
+                  {skills.node.list.map((item) => (
+                    <li className={styles.item} key={item}>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </Fragment>
+            ))}
           </section>
         </Fragment>
       )}
