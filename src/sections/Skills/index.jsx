@@ -8,12 +8,10 @@ export default function Skills() {
     <StaticQuery
       query={graphql`
         query SkillsQuery {
-          allContentfulSkills {
-            edges {
-              node {
-                list
-                title
-              }
+          contentfulListOfSkills {
+            skills {
+              list
+              title
             }
           }
         }
@@ -22,11 +20,11 @@ export default function Skills() {
         <Fragment>
           <h2 className={classnames(styles.title, "title")}>Skills</h2>
           <section className={styles.container}>
-            {data.allContentfulSkills.edges.map((skills, key) => (
+            {data.contentfulListOfSkills.skills.map((skills, key) => (
               <Fragment key={key}>
-                <h3 className={styles.label}>{skills.node.title}</h3>
+                <h3 className={styles.label}>{skills.title}</h3>
                 <ul className={styles.items}>
-                  {skills.node.list.map((item) => (
+                  {skills.list.map((item) => (
                     <li className={styles.item} key={item}>
                       {item}
                     </li>
