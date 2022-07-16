@@ -1,6 +1,6 @@
 import React from "react";
 import { FiGithub } from "react-icons/fi";
-import styles from "./Menu.module.scss";
+import * as styles from "./Menu.module.scss";
 
 export default function GitHub() {
   return (

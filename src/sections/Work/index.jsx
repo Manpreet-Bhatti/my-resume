@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Work.module.scss";
+import * as styles from "./Work.module.scss";
 import { StaticQuery, graphql } from "gatsby";
 import { FiGithub, FiLink } from "react-icons/fi";
 

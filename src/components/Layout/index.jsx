@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Layout.module.scss";
+import * as styles from "./Layout.module.scss";
 
 export default function Layout({ header, education, skills, work, projects }) {
   return (

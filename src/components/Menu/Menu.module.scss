@@ -46,11 +46,11 @@
   height: map-get(variables.$text, larger);
   width: map-get(variables.$text, larger);
 
-  &--abs {
+  &__abs {
     @include mixins.position(absolute);
   }
 
-  &--hidden {
+  &__hidden {
     opacity: 0;
   }
 }

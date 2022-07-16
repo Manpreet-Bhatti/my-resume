@@ -1,7 +1,7 @@
 import React from "react";
 import classnames from "classnames";
 import { EduData } from "./data";
-import styles from "./Education.module.scss";
+import * as styles from "./Education.module.scss";
 
 export default function Education() {
   return (

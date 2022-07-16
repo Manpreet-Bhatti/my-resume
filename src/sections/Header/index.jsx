@@ -1,15 +1,14 @@
 import React from "react";
-import classnames from "classnames";
 import { graphql, useStaticQuery } from "gatsby";
 import iconMap from "./iconMap";
 import { HeaderData } from "./data";
-import styles from "./Header.module.scss";
+import * as styles from "./Header.module.scss";
 
 export default function Header() {
   const { site } = useStaticQuery(query);
   return (
-    <header className={classnames(styles.container, "container")}>
-      <div className={styles.head}>
+    <header>
+      <div>
         <h1 className={styles.title}>{site.siteMetadata.author}</h1>
         <strong className={styles.blurb}>{site.siteMetadata.blurb}</strong>
       </div>

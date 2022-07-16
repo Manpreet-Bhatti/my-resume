@@ -1,6 +1,6 @@
 import React from "react";
 import { FiPrinter } from "react-icons/fi";
-import styles from "./Menu.module.scss";
+import * as styles from "./Menu.module.scss";
 
 export default function PrintScreen() {
   return (

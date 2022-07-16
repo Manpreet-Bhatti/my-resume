@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import classnames from "classnames";
-import styles from "./Skills.module.scss";
+import * as styles from "./Skills.module.scss";
 import { StaticQuery, graphql } from "gatsby";
 
 export default function Skills() {

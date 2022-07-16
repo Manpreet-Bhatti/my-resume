@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { FiSun, FiMoon } from "react-icons/fi";
 import classnames from "classnames";
 import { modeContext } from "../../pages";
-import styles from "./Menu.module.scss";
+import * as styles from "./Menu.module.scss";
 
 export default function ToggleMode() {
   const context = useContext(modeContext);
@@ -14,16 +14,13 @@ export default function ToggleMode() {
       className={styles.button}
     >
       <FiSun
-        className={classnames(
-          styles.icon,
-          context.get || styles["icon--hidden"],
-        )}
+        className={classnames(styles.icon, context.get || styles.icon__hidden)}
       />
       <FiMoon
         className={classnames(
           styles.icon,
-          styles["icon--abs"],
-          context.get && styles["icon--hidden"],
+          styles.icon__abs,
+          context.get && styles.icon__hidden,
         )}
       />
     </button>
