@@ -14,6 +14,7 @@ module.exports = {
     "gatsby-plugin-offline",
     "gatsby-plugin-sharp",
     "gatsby-plugin-image",
+    "gatsby-plugin-netlify",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
