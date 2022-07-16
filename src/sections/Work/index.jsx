@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Work.module.scss";
 import { StaticQuery, graphql } from "gatsby";
-import { FiGithub } from "react-icons/fi";
+import { FiGithub, FiLink } from "react-icons/fi";
 
 export default function Work() {
   return (
@@ -14,6 +14,7 @@ export default function Work() {
                 start(formatString: "MMM YYYY")
                 end(formatString: "MMM YYYY")
                 company
+                home
                 position
                 childrenContentfulWorkDescriptionJsonNode {
                   content
@@ -35,7 +36,18 @@ export default function Work() {
               return (
                 <div key={key}>
                   <div className={styles.header}>
-                    <h3 className={styles.title}>{job.node.company}</h3>
+                    <h3 className={styles.title}>
+                      {job.node.company}&nbsp;&nbsp;
+                      {job.node.home && (
+                        <a
+                          href={job.node.home}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <FiLink className={styles.icon} />
+                        </a>
+                      )}
+                    </h3>
                     <span className={styles.dates}>
                       {job.node.start} {"\u2013"} {job.node.end}
                     </span>
