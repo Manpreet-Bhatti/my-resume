@@ -11,15 +11,13 @@ export default function Work() {
           allContentfulWork {
             edges {
               node {
-                start(formatString: "MMM YYYY")
-                end(formatString: "MMM YYYY")
+                start(formatString: "MMM DD YYYY")
+                end(formatString: "MMM DD YYYY")
                 company
                 home
                 position
-                childrenContentfulWorkDescriptionJsonNode {
+                description {
                   content
-                  link
-                  label
                 }
               }
             }
@@ -49,35 +47,41 @@ export default function Work() {
                       )}
                     </h3>
                     <span className={styles.dates}>
-                      {job.node.start} {"\u2013"} {job.node.end}
+                      {job.node.start.split(" ")[0] +
+                        " " +
+                        job.node.start.split(" ")[2]}{" "}
+                      {"\u2013"}{" "}
+                      {job.node.start.split(" ")[1] ===
+                      job.node.end.split(" ")[1]
+                        ? "Present"
+                        : job.node.end.split(" ")[0] +
+                          " " +
+                          job.node.end.split(" ")[2]}
                     </span>
                   </div>
                   <p className={styles.subtitle}>{job.node.position}</p>
                   <div className={styles.content}>
                     <ul>
-                      {job.node.childrenContentfulWorkDescriptionJsonNode.map(
-                        (content, i) => {
-                          return (
-                            <li key={i}>
-                              <p>
-                                {content.content}{" "}
-                                {content.link !== null &&
-                                  content.label !== null && (
-                                    <a
-                                      aria-label={content.label}
-                                      rel="noreferrer noopenner"
-                                      className={styles.link}
-                                      target="_blank"
-                                      href={content.link}
-                                    >
-                                      <FiGithub className={styles.icon} />
-                                    </a>
-                                  )}
-                              </p>
-                            </li>
-                          );
-                        },
-                      )}
+                      {job.node.description.map((content, i) => {
+                        return (
+                          <li key={i}>
+                            <p>
+                              {content.content}{" "}
+                              {content.link && content.label && (
+                                <a
+                                  aria-label={content.label}
+                                  rel="noreferrer noopenner"
+                                  className={styles.link}
+                                  target="_blank"
+                                  href={content.link}
+                                >
+                                  <FiGithub className={styles.icon} />
+                                </a>
+                              )}
+                            </p>
+                          </li>
+                        );
+                      })}
                     </ul>
                   </div>
                 </div>
