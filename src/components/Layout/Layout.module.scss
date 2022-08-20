@@ -16,7 +16,7 @@
   @include mixins.transition(background-color);
   padding: map-get(variables.$unit, section);
   background-color: var(--color--background);
-  height: map-get(variables.$page, height);
+  // height: map-get(variables.$page, height);
   width: map-get(variables.$page, width);
   box-shadow: var(--shadow);
   box-sizing: border-box;
