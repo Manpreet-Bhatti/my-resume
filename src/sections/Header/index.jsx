@@ -10,7 +10,7 @@ export default function Header() {
     <header>
       <div>
         <h1 className={styles.title}>{site.siteMetadata.author}</h1>
-        <strong className={styles.blurb}>{site.siteMetadata.blurb}</strong>
+        {/* <strong className={styles.blurb}>{site.siteMetadata.blurb}</strong> */}
       </div>
       <ul className={styles.items}>
         {HeaderData.map((content, key) => {
