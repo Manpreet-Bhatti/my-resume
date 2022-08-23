@@ -6,6 +6,7 @@ import Header from "../sections/Header";
 import Skills from "../sections/Skills";
 import Education from "../sections/Education";
 import Work from "../sections/Work";
+import Projects from "../sections/Projects";
 import Menu from "../components/Menu";
 import Seo from "../components/Seo";
 
@@ -51,6 +52,7 @@ export default function IndexPage() {
         skills={<Skills />}
         education={<Education />}
         work={<Work />}
+        projects={<Projects />}
       />
       <Menu />
     </modeContext.Provider>
