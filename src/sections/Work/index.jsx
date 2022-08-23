@@ -32,7 +32,13 @@ export default function Work() {
                   <h3 className={styles.title}>
                     {job.company}&nbsp;&nbsp;
                     {job.home && (
-                      <a href={job.home} target="_blank" rel="noreferrer">
+                      <a
+                        aria-label={job.company}
+                        href={job.home}
+                        className={styles.link}
+                        target="_blank"
+                        rel="noreferrer noopenner"
+                      >
                         <FiLink className={styles.icon} />
                       </a>
                     )}
