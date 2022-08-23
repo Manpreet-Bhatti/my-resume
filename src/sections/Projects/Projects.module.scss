@@ -1,0 +1,55 @@
+@use "../../styles/variables";
+@use "../../styles/mixins";
+@use "sass:math";
+
+.header {
+  display: flex;
+}
+
+.title {
+  font-size: map-get(variables.$text, smaller) !important;
+  padding-right: map-get(variables.$unit, container);
+  margin: 0 auto 0 0;
+}
+
+.content {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: map-get(variables.$unit, element);
+    font-size: map-get(variables.$text, small);
+  }
+
+  p {
+    margin-bottom: map-get(variables.$unit, tad);
+    margin-top: 0;
+    display: inline-flex;
+  }
+}
+.icon {
+  width: map-get(variables.$text, small);
+  color: var(--color--primary);
+  flex-shrink: 0;
+  height: auto;
+}
+
+.link {
+  @include mixins.transition(background-color);
+  border-radius: map-get(variables.$unit, tad);
+  padding: map-get(variables.$unit, tad) map-get(variables.$unit, tad);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    background-color: var(--color--text-high);
+  }
+
+  &:active {
+    background-color: var(--color--text-high-active);
+  }
+}
