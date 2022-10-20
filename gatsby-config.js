@@ -4,7 +4,7 @@ require("dotenv").config();
 module.exports = {
   siteMetadata: {
     title: "my-resume",
-    blurb: "Development Intern @ Critical Mass",
+    blurb: "Previously @ Critical Mass",
     author: "Manpreet Bhatti",
     description,
   },
