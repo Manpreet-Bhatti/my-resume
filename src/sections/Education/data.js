@@ -7,5 +7,6 @@ export const EduData = {
     "Hack The Valley",
     "Association of Mathematics and Computer Science Students",
     "Computer Science Enrichment Club",
+    "UofT Blueprint",
   ],
 };
