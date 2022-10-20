@@ -22,7 +22,7 @@ module.exports = {
         short_name: "mbhatti-resume",
         start_url: "/",
         background_color: "#ffffff",
-        theme_color: "#DF3039",
+        theme_color: "#CE2029",
         display: "minimal-ui",
         icon: "src/logo.svg",
       },

@@ -2,14 +2,14 @@ $_text: #333333;
 
 $colors: (
   background: #ffffff,
-  primary: #df3039,
+  primary: #ce2029,
   heading: $_text,
   text: lighten($_text, 25%),
 );
 
 $dark_colors: (
   background: #252525,
-  primary: #df3039,
+  primary: #ce2029,
   heading: invert(map-get($colors, heading)),
   text: invert(map-get($colors, text)),
 );
