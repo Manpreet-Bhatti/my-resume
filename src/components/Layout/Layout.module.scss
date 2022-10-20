@@ -3,7 +3,7 @@
 @use "../../styles/index";
 
 .container {
-  padding: map-get(variables.$unit, section);
+  padding: map-get(variables.$unit, page);
   margin: 0 auto;
 
   @media print {
@@ -14,7 +14,7 @@
 
 .body {
   @include mixins.transition(background-color);
-  padding: map-get(variables.$unit, section);
+  padding: map-get(variables.$unit, margins);
   background-color: var(--color--background);
   height: map-get(variables.$page, height);
   width: map-get(variables.$page, width);
