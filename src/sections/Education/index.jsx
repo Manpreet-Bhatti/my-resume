@@ -17,7 +17,7 @@ export default function Education() {
       </div>
       <p className={styles.subtitle}>{EduData["degree"]}</p>
       <div className={styles.content}>
-        <h3 className={styles.label}>Leadership</h3>
+        <h3 className={styles.label}>Leadership/Clubs</h3>
         <ul>
           {EduData["content"].map((para, key) => {
             return (
