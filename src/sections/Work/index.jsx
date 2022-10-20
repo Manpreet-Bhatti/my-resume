@@ -30,7 +30,13 @@ export default function Work() {
               <div key={key}>
                 <div className={styles.header}>
                   <h3 className={styles.title}>
-                    {job.company}&nbsp;&nbsp;
+                    {job.company}{" "}
+                    {job.company === "Zonado" && (
+                      <span style={{ fontWeight: 300 }}>
+                        (8-employee real estate marketplace startup)
+                      </span>
+                    )}
+                    &nbsp;&nbsp;
                     {job.home && (
                       <a
                         aria-label={job.company}
