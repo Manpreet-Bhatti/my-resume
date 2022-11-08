@@ -3,7 +3,14 @@ export const EduData = {
   start: 2018,
   end: "Present",
   degree: "Honours Bachelors of Science, Computer Science",
-  content: [
+  coursework: [
+    "Software Engineering",
+    "Operating Systems",
+    "Algorithms",
+    "Full Stack Development",
+    "Systems Design",
+  ],
+  organizations: [
     "Hack The Valley",
     "Association of Mathematics and Computer Science Students",
     "Computer Science Enrichment Club",
