@@ -1,7 +1,7 @@
 export const EduData = {
   title: "University of Toronto",
   start: 2018,
-  end: "Present",
+  end: 2023,
   degree: "Honours Bachelors of Science, Computer Science",
   coursework: [
     "Software Engineering",
