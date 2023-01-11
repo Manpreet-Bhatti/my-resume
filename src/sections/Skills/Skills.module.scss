@@ -16,7 +16,7 @@
 }
 
 .item {
-  font-size: map-get(variables.$text, smaller);
+  font-size: map-get(variables.$text, small);
 }
 
 .label {
