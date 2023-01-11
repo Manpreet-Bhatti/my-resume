@@ -16,6 +16,7 @@
   font-size: map-get(variables.$text, smaller) !important;
   padding-right: map-get(variables.$unit, container);
   margin-right: auto;
+  margin-bottom: 0.15rem;
 }
 
 .dates {
@@ -40,8 +41,11 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-bottom: map-get(variables.$unit, element);
     font-size: map-get(variables.$text, small);
+  }
+
+  ul:not(:last-child) {
+    margin-bottom: map-get(variables.$unit, element);
   }
 
   p {
