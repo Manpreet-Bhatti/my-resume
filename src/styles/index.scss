@@ -15,6 +15,7 @@ body {
   @include mixins.transition(background-color);
   background-color: var(--color--background-hover);
   font-family: map-get(variables.$font, secondary);
+  print-color-adjust: exact;
   -webkit-print-color-adjust: exact;
   color: var(--color--text);
   margin: 0;
@@ -49,7 +50,7 @@ span {
   }
 
   .title {
-    margin-bottom: map-get(variables.$unit, tad);
+    margin-bottom: 0.222rem;
     font-size: map-get(variables.$text, larger);
     color: var(--color--heading);
   }
