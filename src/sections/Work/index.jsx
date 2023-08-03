@@ -17,6 +17,8 @@ export default function Work() {
               position
               description {
                 content
+                label
+                link
               }
             }
           }
@@ -63,20 +65,29 @@ export default function Work() {
                     {job.description.map((content, i) => {
                       return (
                         <li key={i}>
-                          <p>
-                            {content.content}{" "}
-                            {content.link && content.label && (
-                              <a
-                                aria-label={content.label}
-                                rel="noreferrer noopenner"
-                                className={styles.link}
-                                target="_blank"
-                                href={content.link}
-                              >
-                                <FiGithub className={styles.icon} />
-                              </a>
-                            )}
-                          </p>
+                          {content.content}
+                          {content.github && content.label && (
+                            <a
+                              aria-label={content.label}
+                              rel="noreferrer noopenner"
+                              className={styles.link}
+                              target="_blank"
+                              href={content.link}
+                            >
+                              <FiGithub className={styles.icon} />
+                            </a>
+                          )}
+                          {content.link && (
+                            <a
+                              aria-label={content.label}
+                              rel="noreferrer noopenner"
+                              className={styles.link}
+                              target="_blank"
+                              href={content.link}
+                            >
+                              <FiLink className={styles.icon} />
+                            </a>
+                          )}
                         </li>
                       );
                     })}
