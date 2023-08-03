@@ -36,7 +36,7 @@
 }
 
 .content {
-  grid-template-columns: min-content auto;
+  grid-template-columns: max-content auto;
   grid-gap: 0.1in 0.15in;
   display: grid;
 
