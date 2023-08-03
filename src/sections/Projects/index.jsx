@@ -29,23 +29,30 @@ export default function Projects() {
                 <div className={styles.header}>
                   <h3 className={styles.title}>
                     {project.name}&nbsp;&nbsp;
-                    {project.home === "-" && project.github === "-" ? (
+                    {project.home === "-" ? (
                       ""
                     ) : (
                       <a
                         aria-label={project.name}
-                        href={
-                          project.home === "-" ? project.github : project.home
-                        }
+                        href={project.home}
                         className={styles.link}
                         target="_blank"
                         rel="noreferrer noopenner"
                       >
-                        {project.home === "-" ? (
-                          <FiGithub className={styles.icon} />
-                        ) : (
-                          <FiLink className={styles.icon} />
-                        )}
+                        <FiLink className={styles.icon} />
+                      </a>
+                    )}
+                    {project.github === "-" ? (
+                      ""
+                    ) : (
+                      <a
+                        aria-label={project.name}
+                        href={project.github}
+                        className={styles.link}
+                        target="_blank"
+                        rel="noreferrer noopenner"
+                      >
+                        <FiGithub className={styles.icon} />
                       </a>
                     )}
                   </h3>
